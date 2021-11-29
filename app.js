@@ -10,7 +10,7 @@
 
 let taskInput=document.getElementById("new-task");//Add a new task.
 let addButton=document.getElementsByTagName("button")[0];//first button
-let incompleteTaskHolder=document.getElementById("incompleteTasks");//ul of #incompleteTasks
+let incompleteTaskHolder=document.getElementById("incomplete-tasks");//ul of #incompleteTasks
 let completedTasksHolder=document.getElementById("completed-tasks");//completed-tasks
 
 
@@ -58,7 +58,6 @@ let createNewTaskElement=function(taskString){
 }
 
 
-
 let addTask=function(){
     console.log("Add Task...");
     //Create a new list item with the text from the #new-task:
@@ -78,7 +77,6 @@ let addTask=function(){
 let editTask=function(){
     console.log("Edit Task...");
     console.log("Change 'edit' to 'save'");
-
 
     let listItem=this.parentNode;
 
